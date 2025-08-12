@@ -1,0 +1,13 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/reset-daily-usage",
+      "schedule": "0 0 * * *"
+    }
+  ],
+  "functions": {
+    "src/app/api/**/*.ts": {
+      "maxDuration": 30
+    }
+  }
+}
